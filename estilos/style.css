@@ -1,0 +1,238 @@
+/*Empiezo trabajando con vista de computadora/desktop */
+
+/*ESTE ES EL FORMATO QUE VOY A USAR PARA TODAS LAS PAGINAS, 4 COLUMNAS Y 3 FILAS. */
+
+/*LA PRIMER FILA ES PARA EL NAVBAR, LA SEGUNDA PARA EL CONTENIDO DE LA PAGINA Y LA TERCERA PARA LE FOOTER*/
+.body {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  /* le agrego grid al body */
+  grid-template-areas: 
+  "cabecera cabecera cabecera cabecera"
+  "section section section section"
+  "footer footer footer footer";
+  /*Asigno el tamaño de las columnas y filas*/
+  /*Las columnas usan 1fr cada una asi se acomoda todo en partes iguales*/
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* con respecto a las filas,  le asigno 100px al header, 1fr a la section (para que ocupe el lugar restante y un auto al footer para que ocupe todoo lo que queda*/
+  grid-template-rows: 100px 1fr auto;
+}
+
+
+/*                                                                                    */
+/*      ACA EMPIEZO A TRABAJAR CON TODO EL HEADER, INCLUYENDO LO QUE HAY DENTRO DE ÉL */
+/*                                                                                    */
+
+.cabecera {
+ /*  le asigno el area que ocupa en el  body */
+  grid-area: cabecera;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(180, 138, 72);
+}
+
+
+.titulo {
+  color: rgb(6, 6, 6);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding-left: 30px;
+  
+}
+
+
+.barra {
+background-color: rgb(64, 48, 27);
+}
+.barra ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.barra ul li {
+  padding: 0;
+  margin: 08px;
+}
+.barra ul li a {
+color: rgb(247, 247, 243);
+text-decoration: none;
+font-size: 20px;
+}
+
+
+/*                                                                       */
+/*    ACA EMPIEZO A TRABAJAR CON TODO LO QUE HAY EN LA SECTION DEL INDEX */
+/*                                                                       */  
+
+
+.section-index {
+  /* le asigno el area que ocupa en el body */
+  grid-area: section;
+  display: grid;
+  grid-template-areas: "img img";
+ /*  le agrego el tamaño a las dos columnas */
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr;
+  width: 100%;
+}
+.pagina{
+  width: 500px;
+  height: 500px;
+  justify-self: center;
+  align-self: center;
+}
+
+
+
+.pie {
+ /*  le asigno el area que ocupa en el body */
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+  background-color: rgb(250, 224, 193);
+  gap: 20px;
+}
+.barra ul li a:hover {
+  color:rgb(246, 87, 52)
+}
+
+.img{
+  /* al div de la imagen le asigno el area que ocupa en la section */
+  grid-area: img;
+}
+img{
+/*   a la imagen le asigno un width del 100% */
+  width: 100%;
+  height: 600px;
+}
+
+/*                                        */
+/*        SECCION DEL HTML QUIENES SOMOS  */
+/*                                        */
+.section-quienes-somos{
+  grid-area: section;
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+}
+.imagen{
+  width: 100%;
+}
+
+/*                                        */
+/*        SECCION DEL HTML PRODUCTOS      */
+/*                                        */                       
+
+.section-productos{
+  /* LA SECCION PARA PRODUCTOS SE VA A DIVIDIR EN 2 filas, EL TITULO Y LA TABLA*/
+  grid-area: section;
+  display: grid;
+  grid-template-areas: 
+  "texto"
+  "tabla";
+}
+
+.title-productos{
+  /*EL TITULO OCUPA LA SECCION TITULO Y ESTÁ ALINEADO AL CENTRO*/
+  text-align: center;
+}
+
+.tabla{
+  /*LA TABLA OCUPA UN WIDTH DE TODA LA PANTALLA Y EL AREA "TABLA" EN LA SECCION*/
+  grid-area: tabla;
+  width: 100%;
+  justify-self: center;
+  align-self: center;
+  height: 600px;
+}
+
+/*                                        */
+/*        SECCION DEL HTML GALERIA        */
+/*                                        */                       
+
+.section-imagenes{
+  grid-area: section;
+  grid-template-areas: 
+  "titulo"
+  "imagenes";
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.titulo-galeria{
+  grid-area: titulo;
+  text-align: center;
+}
+.imagenes{
+  grid-area: imagenes;
+  width: 600px;
+  height: 600px;
+  /*le asigno un margin left para que se ubiquen en el centro*/
+  margin-left: 50px;
+}
+
+
+/*                                        */
+/*        SECCION DEL HTML CONTACTO       */
+/*                                        */  
+
+
+.section-contacto{
+
+  grid-area: section;
+  grid-template-areas: 
+  "titulo"
+  "formulario";
+}
+
+
+.titulo-contacto{
+  text-align: center;
+  grid-area: titulo;
+}
+
+.formulario{
+  width: 100%;
+  grid-area: formulario;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media screen and (max-width: 420px) {
+  
+/*HAGO DESAPARECER EL NAV PORQUE CON BOOSTRAP VA A SER MEJOR */
+
+  nav{
+    display: none;
+  }
+  
+/*INDEX*/
+  .subtitulo{
+    /*LE SACO EL SUBTITULO Y LA PAGINA PARA QUE QUEDE MEJOR*/
+    display: none;
+  }
+  .pagina{
+    display: none;
+    width: 100%;
+    height: 150px;
+    justify-self: center;
+    align-self: center;
+  }
+/*GALERIA*/ 
+
+/*CAMBIO EL TAMAÑO DE LAS IMAGENES DE LA GALERIA, SACO EL MARGIN LEFT, TODO PARA ADAPTARLO AL DISEÑO MOBILE */
+  .imagenes{
+    grid-area: imagenes;
+    /*SU WIDTH DE 100% LO HACE OCUPAR TODO EL ANCHO DE LA PANTALLA */
+    width: 100%;
+    height: 320px;
+    margin-left: 0px;
+}
+}
