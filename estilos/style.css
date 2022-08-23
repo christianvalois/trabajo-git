@@ -134,7 +134,9 @@ img{
   display: grid;
   grid-template-areas: 
   "texto"
-  "tabla";
+  "tabla";background-color: rgb(246, 224, 196);
+  text-align: center;
+
 }
 
 .title-productos{
