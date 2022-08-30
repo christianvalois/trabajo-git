@@ -85,8 +85,6 @@ font-size: 20px;
   align-self: center;
 }
 
-
-
 .pie {
  /*  le asigno el area que ocupa en el body */
   grid-area: footer;
@@ -119,6 +117,10 @@ img{
   justify-self: center;
   align-self: center;
   width: 100%;
+}
+.historia {
+text-align: justify;
+
 }
 .imagen{
   width: 100%;
@@ -206,7 +208,6 @@ img{
   justify-content: center;
 }
 
-
 @media screen and (max-width: 420px) {
   
 /*HAGO DESAPARECER EL NAV PORQUE CON BOOSTRAP VA A SER MEJOR */
@@ -219,6 +220,7 @@ img{
   .subtitulo{
     /*LE SACO EL SUBTITULO Y LA PAGINA PARA QUE QUEDE MEJOR*/
     display: none;
+  text-align: right;
   }
   .pagina{
     display: none;
