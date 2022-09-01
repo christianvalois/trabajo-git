@@ -138,12 +138,12 @@ text-align: justify;
   "texto"
   "tabla";background-color: rgb(246, 224, 196);
   text-align: center;
-
 }
 
 .title-productos{
   /*EL TITULO OCUPA LA SECCION TITULO Y ESTÁ ALINEADO AL CENTRO*/
-  text-align: center;
+text-align: center;
+
 }
 
 .tabla{
@@ -152,7 +152,7 @@ text-align: justify;
   width: 100%;
   justify-self: center;
   align-self: center;
-  height: 600px;
+  height: 500px;
 }
 
 /*                                        */
@@ -207,6 +207,18 @@ text-align: justify;
   align-items: center;
   justify-content: center;
 }
+.contenedor1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: brown;
+  grid-template-rows: 1fr;
+  align-items: stretch;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 
 @media screen and (max-width: 420px) {
   
@@ -220,7 +232,6 @@ text-align: justify;
   .subtitulo{
     /*LE SACO EL SUBTITULO Y LA PAGINA PARA QUE QUEDE MEJOR*/
     display: none;
-  text-align: right;
   }
   .pagina{
     display: none;
