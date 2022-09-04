@@ -209,13 +209,20 @@ text-align: center;
 }
 .contenedor1 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   background-color: brown;
-  grid-template-rows: 1fr;
-  align-items: stretch;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  grid-template-rows: 900px;
+justify-items: center;
+border: 5px solid;
+
+
+}
+.contenedor2 {
+  display: grid;
+  background-color: brown;
+justify-items: stretch;
+
+
 }
 
 
