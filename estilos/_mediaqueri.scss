@@ -1,0 +1,54 @@
+@media screen and (max-width: 420px) {
+    /*HAGO DESAPARECER EL NAV PORQUE CON BOOSTRAP VA A SER MEJOR */
+    nav {
+      display: none;
+    }
+    /*INDEX*/
+    .subtitulo {
+      /*LE SACO EL SUBTITULO Y LA PAGINA PARA QUE QUEDE MEJOR*/
+      display: none;
+    }
+    .pagina {
+      display: none;
+      width: 100%;
+      height: 150px;
+      justify-self: center;
+      align-self: center;
+    }
+    /*GALERIA*/
+    /*CAMBIO EL TAMAÑO DE LAS IMAGENES DE LA GALERIA, SACO EL MARGIN LEFT, TODO PARA ADAPTARLO AL DISEÑO MOBILE */
+    .imagenes {
+      grid-area: imagenes;
+      /*SU WIDTH DE 100% LO HACE OCUPAR TODO EL ANCHO DE LA PANTALLA */
+      width: 100%;
+      height: 320px;
+      margin-left: 0px;
+    }
+  }
+  @media screen and (max-width: 420px) {
+    /*HAGO DESAPARECER EL NAV PORQUE CON BOOSTRAP VA A SER MEJOR */
+    nav {
+      display: none;
+    }
+    /*INDEX*/
+    .subtitulo {
+      /*LE SACO EL SUBTITULO Y LA PAGINA PARA QUE QUEDE MEJOR*/
+      display: none;
+    }
+    .pagina {
+      display: none;
+      width: 100%;
+      height: 150px;
+      justify-self: center;
+      align-self: center;
+    }
+    /*GALERIA*/
+    /*CAMBIO EL TAMAÑO DE LAS IMAGENES DE LA GALERIA, SACO EL MARGIN LEFT, TODO PARA ADAPTARLO AL DISEÑO MOBILE */
+    .imagenes {
+      grid-area: imagenes;
+      /*SU WIDTH DE 100% LO HACE OCUPAR TODO EL ANCHO DE LA PANTALLA */
+      width: 100%;
+      height: 320px;
+      margin-left: 0px;
+    }
+  }/*# sourceMappingURL=style.css.map */

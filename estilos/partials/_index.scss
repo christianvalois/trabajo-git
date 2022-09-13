@@ -1,0 +1,10 @@
+.section-index {
+    /* le asigno el area que ocupa en el body */
+    grid-area: section;
+    display: grid;
+    grid-template-areas: "img img";
+   /*  le agrego el tamaño a las dos columnas */
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+    width: 100%;
+  }
