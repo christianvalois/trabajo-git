@@ -1,0 +1,14 @@
+.pie {
+    /*  le asigno el area que ocupa en el body */
+     grid-area: footer;
+     display: flex;
+     justify-content: center;
+     margin: 0;
+     width: 100%;
+     background-color: rgb(250, 224, 193);
+     gap: 20px;
+   }
+   .barra ul li a:hover {
+     color:rgb(236, 58, 26)
+   }
+    

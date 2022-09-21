@@ -1,4 +1,122 @@
 @charset "UTF-8";
+.section-contacto {
+  grid-area: section;
+  grid-template-areas: "titulo" "formulario";
+}
+
+.titulo-contacto {
+  text-align: center;
+  grid-area: titulo;
+}
+
+.formulario {
+  width: 100%;
+  grid-area: formulario;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pie {
+  /*  le asigno el area que ocupa en el body */
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+  background-color: rgb(250, 224, 193);
+  gap: 20px;
+}
+
+.barra ul li a:hover {
+  color: rgb(236, 58, 26);
+}
+
+.section-index {
+  /* le asigno el area que ocupa en el body */
+  grid-area: section;
+  display: grid;
+  grid-template-areas: "img img";
+  /*  le agrego el tamaño a las dos columnas */
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr;
+  width: 100%;
+}
+
+.section-quienes-somos {
+  grid-area: section;
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+}
+
+.historia {
+  text-align: justify;
+}
+
+.imagen {
+  width: 100%;
+}
+
+.section-contacto {
+  grid-area: section;
+  grid-template-areas: "titulo" "formulario";
+}
+
+.titulo-contacto {
+  text-align: center;
+  grid-area: titulo;
+}
+
+.formulario {
+  width: 100%;
+  grid-area: formulario;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pie {
+  /*  le asigno el area que ocupa en el body */
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  width: 100%;
+  background-color: rgb(250, 224, 193);
+  gap: 20px;
+}
+
+.barra ul li a:hover {
+  color: rgb(246, 87, 52);
+}
+
+.section-index {
+  /* le asigno el area que ocupa en el body */
+  grid-area: section;
+  display: grid;
+  grid-template-areas: "img img";
+  /*  le agrego el tamaño a las dos columnas */
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr;
+  width: 100%;
+}
+
+.section-quienes-somos {
+  grid-area: section;
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+}
+
+.historia {
+  text-align: justify;
+}
+
+.imagen {
+  width: 100%;
+}
+
 /*Empiezo trabajando con vista de computadora/desktop */
 /*ESTE ES EL FORMATO QUE VOY A USAR PARA TODAS LAS PAGINAS, 4 COLUMNAS Y 3 FILAS. */
 /*LA PRIMER FILA ES PARA EL NAVBAR, LA SEGUNDA PARA EL CONTENIDO DE LA PAGINA Y LA TERCERA PARA LE FOOTER*/
