@@ -1,0 +1,24 @@
+.section-productos{
+    /* LA SECCION PARA PRODUCTOS SE VA A DIVIDIR EN 2 filas, EL TITULO Y LA TABLA*/
+    grid-area: section;
+    display: grid;
+    grid-template-areas: 
+    "texto"
+    "tabla";background-color: rgb(246, 220, 196);
+    text-align: center;
+  }
+  
+  .title-productos{
+    /*EL TITULO OCUPA LA SECCION TITULO Y ESTÁ ALINEADO AL CENTRO*/
+  text-align: center;
+  
+  }
+  
+  .tabla{
+    /*LA TABLA OCUPA UN WIDTH DE TODA LA PANTALLA Y EL AREA "TABLA" EN LA SECCION*/
+    grid-area: tabla;
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+    height: 500px;
+  }

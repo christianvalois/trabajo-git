@@ -1,0 +1,19 @@
+.section-imagenes {
+    grid-area: section;
+    grid-template-areas: "titulo" "imagenes";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  
+  .titulo-galeria {
+    grid-area: titulo;
+    text-align: center;
+  }
+  
+  .imagenes {
+    grid-area: imagenes;
+    width: 600px;
+    height: 600px;
+    /*le asigno un margin left para que se ubiquen en el centro*/
+    margin-left: 50px;
+  }

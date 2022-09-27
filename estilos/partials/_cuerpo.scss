@@ -1,0 +1,12 @@
+.body {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    /* le agrego grid al body */
+    grid-template-areas: "cabecera cabecera cabecera cabecera" "section section section section" "footer footer footer footer";
+    /*Asigno el tamaño de las columnas y filas*/
+    /*Las columnas usan 1fr cada una asi se acomoda todo en partes iguales*/
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* con respecto a las filas,  le asigno 100px al header, 1fr a la section (para que ocupe el lugar restante y un auto al footer para que ocupe todoo lo que queda*/
+    grid-template-rows: 100px 1fr auto;
+  }
